@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="IQuerable/IQueryable.csproj" Id="5e5a2912-d412-4f8d-82d5-6ab2981e763e" />
   <Project Path="Linq.ExpressionTree/Linq.ExpressionTree.csproj" Id="4e0e2b91-f255-4a5e-b823-2ecadba31273" />
   <Project Path="Linq.master/Linq.master.csproj" Id="f5b60a04-a016-473d-bb2c-468f3256fc21" />
   <Project Path="LinqSimulation/Linq Simulation.csproj" />
