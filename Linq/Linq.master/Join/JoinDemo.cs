@@ -65,15 +65,6 @@ namespace Linq.master.Join
                --------------------
             */
 
-            var result2 = from e in employees
-                         join o in orders
-                         on e.Id equals o.EmployeeId into empOrders
-                         select new
-                         {
-                             Employee = e,
-                             Orders = empOrders
-                         };
-
             var result = employees.GroupJoin(
                 orders,
                 e => e.Id,
@@ -83,6 +74,16 @@ namespace Linq.master.Join
                     Employee = emp,
                     Orders = empOrders
                 });
+
+
+            var result2 = from e in employees
+                          join o in orders
+                          on e.Id equals o.EmployeeId into empOrders
+                          select new
+                          {
+                              Employee = e,
+                              Orders = empOrders
+                          };
 
             foreach (var item in result)
             {
