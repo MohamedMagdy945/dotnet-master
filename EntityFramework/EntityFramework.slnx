@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="ADO-DotNet/ADO-DotNet.csproj" Id="a13c8249-3e01-433e-827a-899b65d69bc3" />
+  <Project Path="ADO-DotNet/ADO_DotNet.csproj" Id="a13c8249-3e01-433e-827a-899b65d69bc3" />
+  <Project Path="Dapper/Dapper_DotNet.csproj" />
 </Solution>
