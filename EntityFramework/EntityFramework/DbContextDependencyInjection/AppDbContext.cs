@@ -1,24 +1,15 @@
 ﻿
 
-using EntityFrameworkCore_DotNet.Entities;
+using EntityFrameworkCore_DotNet.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EntityFrameworkCore_DotNet.DbContextDependencyInjection
 {
-    public class AppDbContext : DbContext
-    {
-        public DbSet<Employee> Employees { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            base.OnConfiguring(options);
-            options.UseSqlServer("Server=.;Database=CompanyDB;Trusted_Connection=True;TrustServerCertificate=True;");
-        }
-    }
-    public class Program
+    public class App
     {
-        public static void Main()
+        public static void Run()
         {
             var options = new DbContextOptionsBuilder();
 

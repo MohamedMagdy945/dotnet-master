@@ -14,5 +14,6 @@ namespace EntityFrameworkCore_DotNet.Data
             base.OnConfiguring(options);
             options.UseSqlServer("Server=.;Database=CompanyDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
+
     }
 }

@@ -21,6 +21,7 @@ namespace EntityFrameworkCore_DotNet.EntityConfiguration.ConfigurationClasses_En
 
             protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
+                base.OnModelCreating(modelBuilder);
                 //modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
 
                 new EmployeeConfiguration().Configure(modelBuilder.Entity<Employee>());
