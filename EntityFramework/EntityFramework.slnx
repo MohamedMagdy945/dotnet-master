@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="ADO-DotNet/ADO_DotNet.csproj" Id="a13c8249-3e01-433e-827a-899b65d69bc3" />
   <Project Path="Dapper/Dapper_DotNet.csproj" />
+  <Project Path="EntityFramework/EntityFrameworkCore_DotNet.csproj" Id="4f1f8fe4-6b81-4a70-92ac-34f5a78716f3" />
 </Solution>
