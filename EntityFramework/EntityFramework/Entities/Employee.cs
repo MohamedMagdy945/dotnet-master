@@ -8,5 +8,7 @@ namespace EntityFrameworkCore_DotNet.Entities
         public string Name { get; set; }
 
         public int Salary { get; set; }
+        public List<Comment> Comments { get; set; }
+        public Section Section { get; set; }
     }
 }
