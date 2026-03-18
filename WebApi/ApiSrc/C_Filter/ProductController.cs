@@ -11,6 +11,13 @@ namespace ApiSrc.C_Filter
     [ServiceFilter(typeof(MyExceptionFilter))]
     public class ProductController : ControllerBase
     {
+        [HttpGet("{id}")]
+        public IActionResult GetProduct(int id)
+        {
+            if (id <= 0)
+                throw new Exception("Invalid product id!");
 
+            return Ok(new { Id = id, Name = "Product " + id });
+        }
     }
 }
