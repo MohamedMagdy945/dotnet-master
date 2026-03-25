@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="Company/Company.csproj" />
-  <Project Path="UnitTest/UnitTest.csproj" />
+  <Project Path="D:/Practise/dotnet-master/UnitTest/Company/Company.csproj" />
+  <Project Path="D:/Practise/dotnet-master/UnitTest/UnitTest_nunit/UnitTest_nunit.csproj" Id="7b2fb2ce-1f3a-4c45-b6dd-e9bf519756d9" />
+  <Project Path="Project/Project.csproj" Id="be2028ce-94c7-4380-9dd8-43b88d0459e9" />
 </Solution>
