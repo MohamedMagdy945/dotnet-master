@@ -1,5 +1,8 @@
 
-namespace System.API
+using Microsoft.EntityFrameworkCore;
+using MySystem.Infrastructure.Persistence;
+
+namespace MySystem.API
 {
     public class Program
     {
@@ -12,6 +15,12 @@ namespace System.API
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+
+            // connectin with database
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
             var app = builder.Build();
 
